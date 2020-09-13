@@ -21,16 +21,5 @@ jobs:
       key : v1-dependencies-{{checksum "package.json"}}     
 
    - run: npm build
-   - run:
-          name: Creating Dummy Artifacts
-          command: |
-            cp /repo/ /repo/name/
-
    - store_artifacts:
-          path: /home/circleci/repo/
-
-   
-   
-   
-   - store_artifacts:               
-          path: /home/circleci/repo/
+          path: /repo/main
