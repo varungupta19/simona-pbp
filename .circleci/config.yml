@@ -24,8 +24,8 @@ jobs:
    - run:
           name: Creating Dummy Artifacts
           command: |
-            mkdir /repo/artifacts;
-            echo "my artifact files in a dir" > /repo/artifacts/artifact-2;
+            sudo mkdir /repo/artifacts;
+            sudo echo "my artifact files in a dir" > /repo/artifacts/artifact-2;
 
    - store_artifacts:
           path: /repo/artifacts
