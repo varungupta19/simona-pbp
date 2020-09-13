@@ -27,10 +27,10 @@ jobs:
             cp /repo/ /repo/name/
 
    - store_artifacts:
-          path: /repo/name
+          path: /home/circleci/repo/
 
    
    
    
    - store_artifacts:               
-          path: /repo/
+          path: /home/circleci/repo/
